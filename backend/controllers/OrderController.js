@@ -8,13 +8,14 @@ exports.addNewOrder = async (req, res) => {
   const input = req.body;
 
   const rules = {
-    product: Joi.string().required().messages({
-      "string.base": "Product must be a required field",
-    }),
-
-    quantity: Joi.number().required().messages({
-      "string.base": "quantity must be a required field",
-    }),
+   product: Joi.array().items(Joi.string()).required().messages({
+    "array.base": "Product must be an array of strings",
+   
+  }),
+  quantity: Joi.array().items(Joi.number()).required().messages({
+    "array.base": "Quantity must be an array of strings",
+   
+  }),
   };
 
   const { error } = Joi.object(rules).validate(input, { abortEarly: false });

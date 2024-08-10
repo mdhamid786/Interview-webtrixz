@@ -13,7 +13,7 @@ const RetailerForm = () => {
 
   return (
     <>
-      <div className=" mt-5 rounded-lg border bg-white p-6 shadow-md md:w-1/3">
+      <div className=" mt-5 rounded-lg border bg-white p-6 shadow-md md:w-1/3 h-1/2">
         <form className=" mx-auto">
           <div className="mb-5">
             <div className="flex items-start mb-5">

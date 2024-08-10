@@ -7,3 +7,13 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
+.parent-container {
+  position: relative; 
+  width: 100%; 
+}
+
+.flex-end {
+  position: absolute; 
+  right: 0; 
+  top: 0; 
+}

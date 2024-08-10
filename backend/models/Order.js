@@ -8,11 +8,11 @@ module.exports = (sequelize, DataTypes) => {
         autoIncrement: true,
       },
       product: {
-        type: DataTypes.STRING,
+        type: DataTypes.ARRAY(DataTypes.STRING),
         allowNull: false,
       },
       quantity: {
-        type: DataTypes.STRING,
+       type: DataTypes.ARRAY(DataTypes.INTEGER),
         allowNull: true,
       },
     },
